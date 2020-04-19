@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test file</title>
+  <style>
+    h1{
+      /* display none makes sure it doesnt appear (no space) */
+      /* display:none; */
+      /* Visibility (cannot be seen but the space for it is there) */
+      /* visibility: hidden; */
+      color: blue !important;
+      /* Important flag means it gets the highest precedence */
+    }
+
+    .hello {
+       /* The further down the style the higher precedence it has how ever
+       element<class<id always */
+      color:red;
+      /* NEgative margins are posible not possible in paddings */
+      margin-top:-30px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="hello">Hello World</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eaque, cum nesciunt fugit fugiat minima?</p>
+</body>
+</html>

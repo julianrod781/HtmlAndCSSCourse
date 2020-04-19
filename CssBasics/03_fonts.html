@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- For none web safe fonts search for them online and copy link then use as it says to use it in the page -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Fonts</title>
+  <style>
+    body {
+      /* Websafe fonts are the ones already in browser */
+      font-family: 'Roboto', sans-serif;
+      /* Standard 16 px */
+      font-size: 18px;
+      line-height: 1.6em;
+      /* Units are usually px,pt,pc  */
+    }
+
+    #welcome p span{
+      font-weight: bold;
+    }
+
+    #about p span{
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet, <span> consectetur adipisicing elit. </span> Perferendis velit quos enim blanditiis hic harum eos vitae corporis deserunt libero.</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit <span> amet consectetur adipisicing elit. Delectus, error incidunt.</span> Aliquid, eaque deserunt praesentium eius doloribus voluptates modi placeat perspiciatis accusantium accusamus velit odit laborum assumenda magnam, ducimus perferendis. Rem adipisci unde ab, beatae esse dolore illum est perferendis?</p>
+  </div>
+</body>
+</html>
