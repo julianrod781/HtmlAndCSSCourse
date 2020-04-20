@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em and Rem Units</title>
+  <style>
+    #box-1 {
+      font-size: 20px;
+
+    }
+
+    #box-1 p {
+      font-size: 1.5em;
+      /* The padding will be the same font
+      size as the current element since it is considered the parent element */
+      padding: 1em;
+    }
+
+    #box-1 ul{
+      /* There is a problem because they always depend on parent
+      so the nested ul will get bigger each time it is more nested */
+      font-size: 1.2em;
+    }
+    /* Change root elements font-size*/
+    html {
+      /* 10 is a common size becauase it is easier to multiply
+      It can also be a percentage */
+      font-size: 10px;
+    }
+    #box-2 h3{
+      font-size: 2rem;
+    }
+
+    #box-2 p {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Em units describe size relative to the next
+  parent font size -->
+
+
+  <div id="box-1">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui eum eligendi vero delectus necessitatibus quas harum neque aliquid soluta!</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </div>
+
+  <!-- Rem units describe size relative to the root element font size -->
+  <div id="box-2">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui eum eligendi vero delectus necessitatibus quas harum neque aliquid soluta!</p>
+  </div>
+</body>
+</html>

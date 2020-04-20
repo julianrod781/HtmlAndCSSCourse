@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh & Vw units</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    header {
+      background: #333 url('https://source.unsplash.com/daily') no-repeat
+      center center/cover;
+      color: #fff;
+      height: 100vh;
+      /* width:50vw */
+      text-align: center;
+      padding: 2rem;
+      padding-top:15rem;
+    }
+
+    header h1{
+      font-size: 3rem; 
+    }
+
+    header p {
+      margin : 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #f4f4f4;
+      color: #333;
+      padding: 0.75rem 2rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+    /* When it is too short the padding needs to be shortened because
+    the initial page overflows*/
+    @media(max-height:450px){
+      header {
+        padding-top: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque provident quisquam tempora, exercitationem sit?</p>
+    <a href="#" class="btn">Find out More</a>
+  </header>
+
+  <section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui culpa, facilis quam ad dolor illum, nobis veniam deserunt, dolorem nemo alias velit doloribus animi. Dignissimos, molestias recusandae. Voluptas quibusdam commodi, veniam nihil dolore illum accusantium delectus hic. Ratione quisquam nobis eligendi, atque quis omnis velit suscipit, quae reiciendis expedita voluptatem?</p>
+  </section>
+</body>
+</html>
